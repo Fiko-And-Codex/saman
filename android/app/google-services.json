@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "984210947346",
+    "project_id": "saman-22a25",
+    "storage_bucket": "saman-22a25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984210947346:android:38aded8bc86671e22187cb",
+        "android_client_info": {
+          "package_name": "com.example.saman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984210947346-po2o91sj707cgp92rk0lj636ldc7cb78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwAd4fVjUnIyhhVA6IF7jF_M5LnSP3rwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984210947346-po2o91sj707cgp92rk0lj636ldc7cb78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
