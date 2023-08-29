@@ -9,7 +9,7 @@ class CoverViewer extends StatefulWidget {
   const CoverViewer({
     super.key,
     required this.controller,
-    this.noCoverText = 'No selection',
+    this.noCoverText = 'Seçim yok',
   });
 
   final VideoEditorController controller;

@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
           return MaterialApp(
             title: Constants.appName,
             debugShowCheckedModeBanner: false,
-            // TODO: Fix app theme.
+           
             theme: themeData(
               notifier.dark ? Constants.darkTheme : Constants.lightTheme,
             ),

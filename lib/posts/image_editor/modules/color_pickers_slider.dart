@@ -25,13 +25,13 @@ class _ColorPickersSliderState extends State<ColorPickersSlider> {
         children: [
           Center(
             child: Text(
-              i18n('Slider Filter Color').toUpperCase(),
+              i18n('Sürgülü Filtre').toUpperCase(),
               style: const TextStyle(color: Colors.white),
             ),
           ),
           const Divider(),
           const SizedBox(height: 20),
-          Text(i18n('Slider Color'),
+          Text(i18n('Sürgü Rengi'),
               style: const TextStyle(color: Colors.white)),
           Row(
             children: [
@@ -48,13 +48,13 @@ class _ColorPickersSliderState extends State<ColorPickersSlider> {
               ),
               TextButton(
                 onPressed: () {},
-                child: Text(i18n('Reset'),
+                child: Text(i18n('Sıfırla'),
                     style: const TextStyle(color: Colors.white)),
               )
             ],
           ),
           const SizedBox(height: 5),
-          Text(i18n('Slider Opicity'),
+          Text(i18n('Sürgülü Opaklık'),
               style: const TextStyle(color: Colors.white)),
           const SizedBox(height: 10),
           Row(children: [
@@ -68,7 +68,7 @@ class _ColorPickersSliderState extends State<ColorPickersSlider> {
             ),
             TextButton(
               onPressed: () {},
-              child: Text(i18n('Reset'),
+              child: Text(i18n('Sıfırla'),
                   style: const TextStyle(color: Colors.white)),
             )
           ]),

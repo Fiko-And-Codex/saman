@@ -292,7 +292,7 @@ class _MainViewState extends State<MainView> {
                                 IgnorePointer(
                                   ignoring: true,
                                   child: Center(
-                                    child: Text('Tap to type',
+                                    child: Text('Yazmak için dokunun',
                                         style: TextStyle(
                                             fontFamily: 'Alegreya',
                                             fontWeight: FontWeight.w500,
@@ -401,7 +401,7 @@ class _MainViewState extends State<MainView> {
                                       width: 1.2,
                                     )),
                                 child: const Text(
-                                  'Cancel',
+                                  'İptal',
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 15,

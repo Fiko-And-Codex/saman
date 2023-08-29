@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:video_player/video_player.dart';
 
-// TODO: Continue here
+
 class PlayVideoScreen extends StatefulWidget {
   final String filePath;
 
@@ -38,7 +38,7 @@ class _PlayVideoScreenState extends State<PlayVideoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: GradientText(
-          'Preview',
+          'Ön İzleme',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w300,

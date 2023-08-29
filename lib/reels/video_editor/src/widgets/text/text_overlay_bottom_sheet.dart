@@ -43,7 +43,7 @@ class _TextOverlayBottomSheetState extends State<TextOverlayBottomSheet> {
           const SizedBox(height: 20),
           const Center(
             child: Text(
-              'Text Size',
+              'Metin Boyutu',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18,
@@ -79,7 +79,7 @@ class _TextOverlayBottomSheetState extends State<TextOverlayBottomSheet> {
               Container(
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Text Color',
+                  'Metin Rengi',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -112,7 +112,7 @@ class _TextOverlayBottomSheetState extends State<TextOverlayBottomSheet> {
                     });
                   },
                   child: const Text(
-                      'Reset',
+                      'Sıfırla',
                       style: TextStyle(
                         color: Colors.blue,
                         fontSize: 15,
@@ -125,7 +125,7 @@ class _TextOverlayBottomSheetState extends State<TextOverlayBottomSheet> {
               Container(
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  'Text Background Color',
+                  'Metin Arka Plan Rengi',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -158,7 +158,7 @@ class _TextOverlayBottomSheetState extends State<TextOverlayBottomSheet> {
                     });
                   },
                   child: const Text(
-                    'Reset',
+                    'Sıfırla',
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -180,7 +180,7 @@ class _TextOverlayBottomSheetState extends State<TextOverlayBottomSheet> {
                   });
                 },
                 child: const Text(
-                  'Remove',
+                  'Sil',
                   style: TextStyle(color: Colors.red, fontSize: 20),
                 ),
               ),

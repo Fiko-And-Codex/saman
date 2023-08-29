@@ -21,7 +21,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Text',
+            'Metin',
             style: TextStyle(
               color: Colors.white,
               fontSize: 20,
@@ -106,7 +106,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
                   decoration: const InputDecoration(
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.all(15),
-                    hintText: 'Enter Text',
+                    hintText: 'Metin Girin',
                     hintStyle: TextStyle(
                       color: Colors.grey,
                       fontSize: 25,
@@ -141,7 +141,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
                   children: [
                     const Center(
                       child: Text(
-                        'Text Size',
+                        'Metin Boyutu',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -181,7 +181,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            'Text Color',
+                            'Metin Rengi',
                             textAlign: TextAlign.left,
                             style: TextStyle(
                               color: Colors.white,
@@ -215,7 +215,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
                           });
                         },
                         child: const Text(
-                            'Reset',
+                            'Sıfırla',
                             style: TextStyle(
                               color: Colors.blue,
                               fontSize: 15,
@@ -236,7 +236,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            'Text Black/White Color',
+                            'Metin Rengi Siyah/Beyaz',
                             textAlign: TextAlign.left,
                             style: TextStyle(
                               color: Colors.white,
@@ -270,7 +270,7 @@ class _TextOverlayScreenState extends State<TextOverlayScreen> {
                           });
                         },
                         child: const Text(
-                            'Reset',
+                            'Sıfırla',
                             style: TextStyle(
                               color: Colors.blue,
                               fontSize: 15,

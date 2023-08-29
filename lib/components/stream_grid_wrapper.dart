@@ -36,7 +36,7 @@ class StreamGridWrapper extends StatelessWidget {
 
           return list.isEmpty ? const Center(
                 child: Text(
-                  'No Posts Yet.',
+                  'Henüz Gönderi Yok.',
                   style: TextStyle(
                     color: Color(0xFFB2BEB5),
                     fontSize: 20.0,

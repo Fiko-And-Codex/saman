@@ -22,7 +22,7 @@ Size computeSizeWithRatio(Size layout, double r) {
     return Size(layout.width, layout.width / r);
   }
 
-  assert(false, 'An error occurred while computing the aspectRatio');
+  assert(false, 'En boy oranı hesaplanırken bir hata oluştu');
 
   return Size.zero;
 }

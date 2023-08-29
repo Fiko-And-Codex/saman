@@ -1,16 +1,17 @@
-import 'package:saman/auth/register_page.dart';
-import 'package:saman/widgets/progress_indicators.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_frame/flutter_web_frame.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:provider/provider.dart';
+import 'package:saman/auth/register_page.dart';
+import 'package:saman/widgets/progress_indicators.dart';
+
 import '../components/pass_form_builder.dart';
 import '../components/text_form_builder.dart';
 import '../utilities/regex.dart';
 import '../view_models/auth/login_view_model.dart';
-import 'package:flutter_web_frame/flutter_web_frame.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -39,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
             capitalization: false,
             enabled: !viewModel.loading,
             prefix: CupertinoIcons.mail_solid,
-            hintText: 'Email',
+            hintText: 'E-Mail Adresiniz',
             textInputAction: TextInputAction.next,
             validateFunction: Regex.validateEmail,
             onSaved: (String value) {
@@ -54,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
             enabled: !viewModel.loading,
             prefix: Ionicons.lock_closed,
             suffix: Ionicons.eye_outline,
-            hintText: "Password",
+            hintText: "Şifreniz",
             textInputAction: TextInputAction.done,
             validateFunction: Regex.validatePassword,
             submitAction: () => viewModel.loginUser(context),
@@ -77,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: const Align(
                   alignment: Alignment.centerRight,
                   child: Text(
-                    'Forgot Password?',
+                    'Şifrenimi Unuttun?',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -98,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.circular(20.0),
               ),
               child: const Text(
-                'Login',
+                'Giriş Yap',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
@@ -142,7 +143,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 const Center(
                   child: Text(
-                    'Welcome back!',
+                    'Tekrar Hoşgeldin!',
                     style: TextStyle(
                       fontSize: 30.0,
                       fontWeight: FontWeight.w800,
@@ -151,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 const Center(
                   child: Text(
-                    'Login. Your fun awaits you!',
+                    'Giriş yap. Eğlencen seni bekliyor!',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.w300,
@@ -165,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Don\'t have an account yet?',
+                    const Text('Henüz bir hesabınız yok mu?',
                         style: TextStyle(fontSize: 15.0)),
                     const SizedBox(width: 5.0),
                     GestureDetector(
@@ -177,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                         );
                       },
                       child: const Text(
-                        'Sign Up.',
+                        'Kayıt Ol.',
                         style: TextStyle(
                           fontSize: 15.0,
                           fontWeight: FontWeight.bold,

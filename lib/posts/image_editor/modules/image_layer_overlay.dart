@@ -41,7 +41,7 @@ class _ImageLayerOverlayState extends State<ImageLayerOverlay> {
           const SizedBox(height: 10),
           Center(
             child: Text(
-              i18n('Size Adjust').toUpperCase(),
+              i18n('Boyut Ayarı').toUpperCase(),
               style: const TextStyle(color: Colors.white),
             ),
           ),
@@ -77,7 +77,7 @@ class _ImageLayerOverlayState extends State<ImageLayerOverlay> {
                   widget.onUpdate();
                 },
                 child: Text(
-                  i18n('Remove'),
+                  i18n('Kaldır'),
                   style: const TextStyle(color: Colors.white),
                 ),
               ),

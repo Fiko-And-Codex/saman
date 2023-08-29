@@ -75,7 +75,7 @@ class _GiphySearchViewState extends State<GiphySearchView> {
                       size: 30,
                     ),
                     border: InputBorder.none,
-                    hintText: 'Search',
+                    hintText: 'Ara',
                     hintStyle: TextStyle(
                         color: Colors.white54.withOpacity(0.5), fontSize: 22),
                   ),
@@ -98,7 +98,7 @@ class _GiphySearchViewState extends State<GiphySearchView> {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Trending on GIPHY',
+                "GIPHY'de trend",
                 style: TextStyle(
                     color: Colors.white.withOpacity(0.5),
                     fontSize: 18,
@@ -147,14 +147,14 @@ class _GiphySearchViewState extends State<GiphySearchView> {
                         )
                       : Center(
                           child: Text(
-                          'No results',
+                          'Sonuç yok',
                           style: TextStyle(
                               color: Colors.white54.withOpacity(0.5),
                               fontSize: 18),
                         ));
                 } else if (snapshot.hasError) {
                   Center(
-                      child: Text('An error occurred',
+                      child: Text('Bir hata oluştu',
                           style: TextStyle(
                               color: Colors.white54.withOpacity(0.5),
                               fontSize: 18)));

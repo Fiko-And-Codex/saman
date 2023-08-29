@@ -59,7 +59,7 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                       height: 20,
                     ),
                     const Text(
-                      "If you go back now, you'll lose all the edits you've made.",
+                      "Şimdi geri dönerseniz, yaptığınız tüm düzenlemeleri kaybedeceksiniz.",
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w400,
@@ -119,7 +119,7 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
 
     PostsViewModel viewModel = Provider.of<PostsViewModel>(context);
 
-    // TODO: Search user while tagging
+    
     return WillPopScope(
       onWillPop: () async {
         await exitDialog(viewModel: viewModel);
@@ -208,7 +208,7 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                     fit: BoxFit.fitWidth,
                   ) : widget.postImage == null ? const Center(
                     child: Text(
-                      'Upload a Photo',
+                      'Bir Fotoğraf Yükleyin',
                       style: TextStyle(
                         color: Colors.blue,
                         fontFamily: 'Raleway',
@@ -232,7 +232,7 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                       alignLabelWithHint: true,
                       labelText: 'Caption',
                       labelStyle: TextStyle(color: Colors.blue, fontSize: 18.0),
-                      hintText: 'Eg. This is very beautiful place!',
+                      hintText: 'Örneğin, Bu Çok Güzel Bir Yer!',
                       hintStyle: TextStyle(color: Colors.white70),
                       enabled: true,
                       enabledBorder: OutlineInputBorder(
@@ -266,9 +266,9 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                   ),
                   decoration: InputDecoration(
                     alignLabelWithHint: true,
-                    labelText: 'Location',
+                    labelText: 'Konum',
                     labelStyle: const TextStyle(color: Colors.blue, fontSize: 18.0),
-                    hintText: 'Eg. New York',
+                    hintText: 'Örneğin, Türkiye',
                     hintStyle: const TextStyle(color: Colors.white70),
                     enabled: true,
                     enabledBorder: const OutlineInputBorder(
@@ -282,7 +282,7 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                         )
                     ),
                     suffixIcon: IconButton(
-                      tooltip: "Use your current location",
+                      tooltip: "Mevcut Konumunuzu Kullanın",
                       icon: const Icon(
                         CupertinoIcons.map_pin_ellipse,
                         size: 25,
@@ -310,9 +310,9 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                   ),
                   decoration: const InputDecoration(
                       alignLabelWithHint: true,
-                      labelText: 'Mentions',
+                      labelText: 'Bahsetmeler',
                       labelStyle: TextStyle(color: Colors.blue, fontSize: 18.0),
-                      hintText: 'Eg. @john @jane',
+                      hintText: 'Örneğin @Fiko @Sinoord ',
                       hintStyle: TextStyle(color: Colors.white70),
                       enabled: true,
                       enabledBorder: OutlineInputBorder(
@@ -342,9 +342,9 @@ class _ConfirmSinglePostScreenState extends State<ConfirmSinglePostScreen> {
                    style: const TextStyle(color: Colors.blue),
                    decoration: const InputDecoration(
                        alignLabelWithHint: true,
-                       labelText: 'Hashtags',
+                       labelText: 'Etiketler',
                        labelStyle: TextStyle(color: Colors.blue, fontSize: 18.0),
-                       hintText: 'Eg. #nature #beauty',
+                       hintText: 'Örneğin, #Doğa #Yaratıcı',
                        hintStyle: TextStyle(color: Colors.white70),
                        enabled: true,
                        enabledBorder: OutlineInputBorder(

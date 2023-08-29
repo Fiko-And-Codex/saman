@@ -20,7 +20,7 @@ Future takePicture(
     Uint8List pngBytes = byteData!.buffer.asUint8List();
 
     final String dir = (await getApplicationDocumentsDirectory()).path;
-    String imagePath = '$dir/saman${DateTime.timestamp()}.gif';
+    String imagePath = '$dir/sinoord${DateTime.timestamp()}.gif';
     File capturedFile = File(imagePath);
     await capturedFile.writeAsBytes(pngBytes);
 

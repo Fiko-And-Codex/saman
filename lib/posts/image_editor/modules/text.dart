@@ -38,7 +38,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
             color: Colors.white,
           ),
           title: Text(
-            i18n('Text'),
+            i18n('Yazı'),
             style: const TextStyle(
               color: Colors.white,
               fontSize: 25,
@@ -112,7 +112,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                       border: InputBorder.none,
                       contentPadding: const EdgeInsets.all(30),
                       hintText: Text(
-                        i18n('Enter Text'),
+                        i18n('Metin Girin'),
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 25,
@@ -146,7 +146,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            i18n('Text Size'),
+                            i18n('Metin Boyutu'),
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -190,7 +190,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            i18n('Text Color'),
+                            i18n('Metin Rengi'),
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -223,7 +223,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                             });
                           },
                           child: Text(
-                            i18n('Reset'),
+                            i18n('Sıfırla'),
                             style: const TextStyle(
                               color: Colors.blue,
                               fontSize: 15,
@@ -239,7 +239,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            i18n('Black/White Color'),
+                            i18n('Siyah/Beyaz Renk'),
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -272,7 +272,7 @@ class _TextEditorImageState extends State<TextEditorImage> {
                             });
                           },
                           child: Text(
-                              i18n('Reset'),
+                              i18n('Sıfırla'),
                               style: const TextStyle(
                                 color: Colors.blue,
                                 fontSize: 15,

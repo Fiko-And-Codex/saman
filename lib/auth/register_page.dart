@@ -1,5 +1,3 @@
-import 'package:saman/components/text_form_builder.dart';
-import 'package:saman/widgets/progress_indicators.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +5,10 @@ import 'package:flutter_web_frame/flutter_web_frame.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:provider/provider.dart';
+import 'package:saman/components/text_form_builder.dart';
+import 'package:saman/widgets/progress_indicators.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
+
 import '../components/pass_form_builder.dart';
 import '../utilities/regex.dart';
 import '../view_models/auth/register_view_model.dart';
@@ -35,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage>{
               capitalization: false,
               enabled: !viewModel.loading,
               prefix: CupertinoIcons.person_solid,
-              hintText: "Username",
+              hintText: "Kullanıcı Adı",
               textInputAction: TextInputAction.next,
               validateFunction: Regex.validateUsername,
               onSaved: (String val) {
@@ -50,7 +51,7 @@ class _RegisterPageState extends State<RegisterPage>{
               capitalization: false,
               enabled: !viewModel.loading,
               prefix: CupertinoIcons.mail_solid,
-              hintText: "Email",
+              hintText: "E-Mail",
               textInputAction: TextInputAction.next,
               validateFunction: Regex.validateEmail,
               onSaved: (String val) {
@@ -65,7 +66,7 @@ class _RegisterPageState extends State<RegisterPage>{
               capitalization: true,
               enabled: !viewModel.loading,
               prefix: CupertinoIcons.globe,
-              hintText: "Country",
+              hintText: "Ülke",
               textInputAction: TextInputAction.next,
               validateFunction: Regex.validateCountry,
               onSaved: (String val) {
@@ -80,7 +81,7 @@ class _RegisterPageState extends State<RegisterPage>{
               enabled: !viewModel.loading,
               prefix: Ionicons.lock_closed,
               suffix: Ionicons.eye_outline,
-              hintText: "Password",
+              hintText: "Şifre",
               textInputAction: TextInputAction.next,
               validateFunction: Regex.validatePassword,
               obscureText: true,
@@ -96,7 +97,7 @@ class _RegisterPageState extends State<RegisterPage>{
               enabled: !viewModel.loading,
               prefix: Ionicons.lock_open,
               suffix: Ionicons.eye_outline,
-              hintText: "Confirm Password",
+              hintText: "Şifre Tekrarı",
               textInputAction: TextInputAction.done,
               validateFunction: Regex.validatePassword,
               submitAction: () => viewModel.register(context),
@@ -110,7 +111,7 @@ class _RegisterPageState extends State<RegisterPage>{
             const SizedBox(height: 10.0),
             const Text(
               textAlign: TextAlign.center,
-              'By signing up you agree to our Terms of Use \n& Privacy Policy.',
+              'Kaydolarak Kullanım Koşullarımızı ve Gizlilik Politikamızı kabul etmiş olursunuz.',
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.bold,
@@ -127,7 +128,7 @@ class _RegisterPageState extends State<RegisterPage>{
                   borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: const Text(
-                  'Signup',
+                  'Kayıt Ol',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20.0,
@@ -175,7 +176,7 @@ class _RegisterPageState extends State<RegisterPage>{
                           width: 20,
                         ),
                         GradientText(
-                          'Welcome to saman.\nCreate a new account & \nconnect with your friends.',
+                          "Sinoord'a hoş geldiniz.\nYeni bir hesap oluşturun & \nArkadaşlarınızla bağlantı kurun.",
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 30.0,
@@ -194,7 +195,7 @@ class _RegisterPageState extends State<RegisterPage>{
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
-                          'Already have an account?',
+                          "Zaten bir hesabınız var'mı?",
                           style: TextStyle(
                             fontSize: 15.0,
                           ),
@@ -202,7 +203,7 @@ class _RegisterPageState extends State<RegisterPage>{
                         GestureDetector(
                           onTap: () => Navigator.of(context).pop(),
                           child: const Text(
-                            ' Log In.',
+                            ' Giriş Yap.',
                             style: TextStyle(
                               fontSize: 15.0,
                               fontWeight: FontWeight.bold,

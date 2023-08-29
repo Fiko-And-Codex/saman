@@ -35,7 +35,7 @@ class _SettingsScreenState extends State<SettingsScreen>{
         backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0.0,
         title: GradientText(
-          'Settings',
+          'Ayarlar',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w300,
@@ -54,14 +54,14 @@ class _SettingsScreenState extends State<SettingsScreen>{
           children: <Widget>[
             const ListTile(
                 title: Text(
-                  "About",
+                  "Hakkımda",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18
                   ),
                 ),
                 subtitle: Text(
-                  "A social media made on Flutter by Arman Khan",
+                  "Arda Bulut tarafından oluşturulmuş bir sosyal medya platformu",
                   style: TextStyle(
                     fontSize: 15
                   ),
@@ -70,14 +70,14 @@ class _SettingsScreenState extends State<SettingsScreen>{
             const Divider(),
             ListTile(
               title: const Text(
-                "Dark Mode",
+                "Karanlık Mod",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18
                 ),
               ),
               subtitle: const Text(
-                "Toggle dark mode",
+                "Karanlık Modu Aç/Kapat",
                 style: TextStyle(
                   fontSize: 15
                 ),
@@ -100,14 +100,14 @@ class _SettingsScreenState extends State<SettingsScreen>{
             const Divider(),
             ListTile(
               title: const Text(
-                "Private Account",
+                "Gizli Hesap",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18
                 ),
               ),
               subtitle: const Text(
-                "Make your account private",
+                "Hesabınızı Gizli Yapın",
                 style: TextStyle(
                     fontSize: 15
                 ),
@@ -121,11 +121,11 @@ class _SettingsScreenState extends State<SettingsScreen>{
                     if (snapshot.hasData) {
                       UserModel user = UserModel.fromJson(snapshot.data!.data() as Map<String, dynamic>);
 
-                      if(user.type == 'public'){
+                      if(user.type == 'Genel'){
 
                         return CupertinoSwitch(
                           onChanged: (val) {
-                            viewModel.updateProfileStatus(context, 'private');
+                            viewModel.updateProfileStatus(context, 'Gizli');
                           },
                           value: false,
                           activeColor: Colors.blue,
@@ -134,7 +134,7 @@ class _SettingsScreenState extends State<SettingsScreen>{
 
                         return CupertinoSwitch(
                           onChanged: (val) {
-                            viewModel.updateProfileStatus(context, 'public');
+                            viewModel.updateProfileStatus(context, 'Genel');
                           },
                           value: true,
                           activeColor: Colors.blue,

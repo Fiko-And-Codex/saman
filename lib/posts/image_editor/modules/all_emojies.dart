@@ -31,7 +31,7 @@ class _EmojiesState extends State<Emojies> {
             const SizedBox(height: 16),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Text(
-                i18n('Select Emoji'),
+                i18n('Emoji Seç'),
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20,

@@ -38,9 +38,9 @@ class _NewPostScreenState extends State<NewPostScreen> with
 
   Future<void> initCamera() async {
     cameras = await availableCameras();
-    controller = CameraController(widget.title != 'Profile Picture' ?
+    controller = CameraController(widget.title != 'Profil Resmi' ?
     cameras.first : cameras.last, ResolutionPreset.high);
-    await onNewCameraSelected(widget.title != 'Profile Picture' ?
+    await onNewCameraSelected(widget.title != 'Profil Resmi' ?
     cameras.first : cameras.last);
   }
 
@@ -266,13 +266,13 @@ class _NewPostScreenState extends State<NewPostScreen> with
                   });
                 }
                 switch (widget.title) {
-                  case 'Profile Picture':
+                  case 'Profil Resmi':
                     //
                     break;
-                  case 'New Story':
+                  case 'Yeni Hikaye':
                     //
                     break;
-                  case 'New Post':
+                  case 'Yeni Gönderi':
                     Navigator.push(
                         context,
                         CupertinoPageRoute(
@@ -427,7 +427,7 @@ class _NewPostScreenState extends State<NewPostScreen> with
   Future<XFile?> takePicture() async {
     final CameraController? cameraController = controller;
     if (cameraController == null || !cameraController.value.isInitialized) {
-      showSnackBar(msg: 'Error: select a camera first.');
+      showSnackBar(msg: 'Error: Önce Bir Kamera Seçin.');
       return null;
     }
 

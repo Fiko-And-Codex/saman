@@ -54,7 +54,7 @@ class GalleryFunctions {
   }
 
   static onPickMax(GalleryMediaPickerController provider) {
-    provider.onPickMax.addListener(() => showToast("Already pick ${provider.max} items."));
+    provider.onPickMax.addListener(() => showToast("Zaten ${provider.max} Öğe Seçtiniz"));
   }
 
   static getPermission(setState, GalleryMediaPickerController provider) async {

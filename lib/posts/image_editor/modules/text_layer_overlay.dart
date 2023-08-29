@@ -52,7 +52,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                i18n('Text Size'),
+                i18n('Metin Boyutu'),
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18,
@@ -93,7 +93,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
               Container(
                 padding: const EdgeInsets.only(left: 25),
                 child: Text(
-                  i18n('Text Color'),
+                  i18n('Metin Rengi'),
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     color: Colors.white,
@@ -130,7 +130,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
                       widget.onUpdate();
                     });
                   },
-                  child: Text(i18n('Reset'),
+                  child: Text(i18n('Sıfırla'),
                       style: const TextStyle(
                         color: Colors.blue,
                         fontSize: 15,
@@ -146,7 +146,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
               Container(
                 padding: const EdgeInsets.only(left: 25),
                 child: Text(
-                  i18n('Text Background Color'),
+                  i18n('Metin Arka Plan Rengi'),
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       color: Colors.white,
@@ -185,7 +185,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
                     });
                   },
                   child: Text(
-                    i18n('Reset'),
+                    i18n('Sıfırla'),
                     style: const TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -201,7 +201,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
               Container(
                 padding: const EdgeInsets.only(left: 25),
                 child: Text(
-                  i18n('Text Background Opacity'),
+                  i18n('Metin Arka Plan Opaklığı'),
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       color: Colors.white,
@@ -234,7 +234,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
                     });
                   },
                   child: Text(
-                    i18n('Reset'),
+                    i18n('Sıfırla'),
                       style: const TextStyle(
                         color: Colors.blue,
                         fontSize: 15,
@@ -256,7 +256,7 @@ class _TextLayerOverlayState extends State<TextLayerOverlay> {
                   widget.onUpdate();
                 },
                 child: Text(
-                  i18n('Remove'),
+                  i18n('Kaldır'),
                   style: const TextStyle(color: Colors.red, fontSize: 20),
                 ),
               ),

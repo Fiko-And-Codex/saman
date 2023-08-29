@@ -122,7 +122,7 @@ class _ProfilePictureScreenState extends State<ProfilePictureScreen>{
                     ),
                     visualDensity: const VisualDensity(horizontal: 0, vertical: -4),
                     leading: const Icon(CupertinoIcons.photo_fill, color: Colors.blue, size: 25),
-                    title: Text('Gallery', style: TextStyle(fontSize: 18.0, color: Theme.of(context).colorScheme.secondary)),
+                    title: Text('Galeri', style: TextStyle(fontSize: 18.0, color: Theme.of(context).colorScheme.secondary)),
                     onTap: () {
                       Navigator.pop(context);
                       // Open in gallery.
@@ -164,7 +164,7 @@ class _ProfilePictureScreenState extends State<ProfilePictureScreen>{
                 ),
                 backgroundColor: Theme.of(context).colorScheme.background,
                 title: GradientText(
-                  'Profile Picture',
+                  'Profil Resmi',
                   style: const TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w300,
@@ -214,7 +214,7 @@ class _ProfilePictureScreenState extends State<ProfilePictureScreen>{
                         child: viewModel.media == null ? Center(
                           child: Text(
                             kIsWeb != true ?
-                            'Tap to select your profile picture' : 'Click to select your profile picture',
+                            'Profil Resmini Seçmek İçin Dokununun' : 'Profil Resmini Seçmek İçin Tıklayın',
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.secondary,
                               fontFamily: 'Raleway',
@@ -250,7 +250,7 @@ class _ProfilePictureScreenState extends State<ProfilePictureScreen>{
                               ),
                             ),
                           ),
-                          child: const Text('Upload',
+                          child: const Text('Yükle',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.white,

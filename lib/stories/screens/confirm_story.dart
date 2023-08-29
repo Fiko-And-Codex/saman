@@ -50,7 +50,7 @@ class _ConfirmStoryState extends State<ConfirmStory> {
       child: Scaffold(
         appBar:  AppBar(
           title: GradientText(
-            'Upload Story',
+            'Hikaye Yükle',
             style: const TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.w300,
@@ -116,7 +116,7 @@ class _ConfirmStoryState extends State<ConfirmStory> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: const Text(
-                          'Done',
+                          'Tamam',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,

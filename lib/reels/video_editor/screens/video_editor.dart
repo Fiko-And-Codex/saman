@@ -90,7 +90,7 @@ class _VideoEditorState extends State<VideoEditor> {
       onProgress: (stats) {
         exportingProgress.value = config.getFFmpegProgress(stats.getTime());
       },
-      onError: (e, s) => showSnackBar("Error on export video :("),
+      onError: (e, s) => showSnackBar("Dışa Ektarma Videosunda Hata :("),
       onCompleted: (file) {
         isExporting.value = false;
         if (!mounted) return;
@@ -107,14 +107,14 @@ class _VideoEditorState extends State<VideoEditor> {
     final config = CoverFFmpegVideoEditorConfig(controller);
     final execute = await config.getExecuteConfig();
     if (execute == null) {
-      showSnackBar("Error on cover exportation initialization.");
+      showSnackBar("Kapak dışa aktarımının başlatılmasında hata.");
 
       return;
     }
 
     await ExportService.runFFmpegCommand(
       execute,
-      onError: (e, s) => showSnackBar("Error on cover exportation :("),
+      onError: (e, s) => showSnackBar("Kapak dışa aktarımında hata :("),
       onCompleted: (cover) {
         if (!mounted) return;
 
@@ -286,7 +286,7 @@ class _VideoEditorState extends State<VideoEditor> {
                                             Padding(
                                                 padding: EdgeInsets.all(5),
                                                 child: Icon(Icons.content_cut)),
-                                            Text('Trim')
+                                            Text('Kırpma')
                                           ]),
                                       Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
@@ -294,7 +294,7 @@ class _VideoEditorState extends State<VideoEditor> {
                                           Padding(
                                               padding: EdgeInsets.all(5),
                                               child: Icon(Icons.video_label)),
-                                          Text('Cover')
+                                          Text('Kapak')
                                         ],
                                       ),
                                     ],
@@ -326,7 +326,7 @@ class _VideoEditorState extends State<VideoEditor> {
                               title: ValueListenableBuilder(
                                 valueListenable: exportingProgress,
                                 builder: (_, double value, __) => Text(
-                                  "Exporting video ${(value * 100).ceil()}%",
+                                  "Videyu Dışa Aktar ${(value * 100).ceil()}%",
                                   style: const TextStyle(fontSize: 12),
                                 ),
                               ),

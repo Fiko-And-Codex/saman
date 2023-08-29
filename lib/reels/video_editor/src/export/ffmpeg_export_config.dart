@@ -185,7 +185,7 @@ class CoverFFmpegVideoEditorConfig extends FFmpegVideoEditorConfig {
   Future<FFmpegVideoEditorExecute?> getExecuteConfig() async {
     final String? coverPath = await _generateCoverFile();
     if (coverPath == null) {
-      debugPrint('VideoThumbnail library error while exporting the cover');
+      debugPrint('Kapağı dışa aktarırken VideoKüçük resim kitaplığı hatası');
 
       return null;
     }

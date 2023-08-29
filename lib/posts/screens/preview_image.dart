@@ -42,7 +42,7 @@ class _PreviewImageState extends State<PreviewImage> {
           systemNavigationBarIconBrightness: Brightness.light,
         ),
         title: GradientText(
-          'Preview',
+          'Önizleme',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w300,
@@ -74,7 +74,7 @@ class _PreviewImageState extends State<PreviewImage> {
                       Navigator.of(context).pop();
                     },
                     child: const Text(
-                      'Cancel',
+                      'İptal Et',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,
@@ -94,7 +94,7 @@ class _PreviewImageState extends State<PreviewImage> {
                       viewModel.uploadPostSingleImage(image: widget.imageFile, context: context);
                     },
                     child: const Text(
-                      'Select',
+                      'Seçin',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20.0,

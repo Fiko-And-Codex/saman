@@ -101,29 +101,29 @@ class AuthService {
   String handleFirebaseAuthError(String e) {
     if (e.contains("ERROR_WEAK_PASSWORD")) {
 
-      return "Password is too weak.";
+      return "Şifre çok zayıf.";
     } else if (e.contains("invalid-email")) {
 
-      return "Invalid email.";
+      return "Geçersiz e-posta.";
     } else if (e.contains("ERROR_EMAIL_ALREADY_IN_USE") ||
         e.contains('email-already-in-use')) {
 
-      return "The email address is already in use by another account.";
+      return "E-posta adresi zaten başka bir hesap tarafından kullanılıyor.";
     } else if (e.contains("ERROR_NETWORK_REQUEST_FAILED")) {
 
-      return "Network error occurred!";
+      return "Ağ hatası oluştu!";
     } else if (e.contains("ERROR_USER_NOT_FOUND") ||
         e.contains('firebase_auth/user-not-found')) {
 
-      return "Invalid credentials.";
+      return "Geçersiz Giriş bilgileri.";
     } else if (e.contains("ERROR_WRONG_PASSWORD") ||
         e.contains('wrong-password')) {
 
-      return "Invalid credentials.";
+      return "Geçersiz Giriş bilgileri.";
     } else if (e.contains('firebase_auth/requires-recent-login')) {
 
-      return 'This operation is sensitive and requires recent authentication.'
-          ' Log in again before retrying this request again.';
+      return 'Bu işlem hassastır ve güncel GİRİŞ doğrulaması gerektirir.'
+          ' Bu isteği tekrar denemeden önce tekrar giriş yapın.';
     } else {
 
       return e;

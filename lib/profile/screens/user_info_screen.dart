@@ -22,7 +22,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>{
       appBar: AppBar(
         centerTitle: true,
         title: GradientText(
-          'User Info',
+          'Kullanıcı Bilgileri',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w300,
@@ -49,7 +49,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>{
           children: [
             const SizedBox(height: 20,),
             const Text(
-              'Country of origin :',
+              'Menşei Ülke :',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
@@ -81,7 +81,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>{
             ),
             const SizedBox(height: 20,),
             const Text(
-              'Date of joining :',
+              'Katılma Tarihi :',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,

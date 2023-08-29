@@ -22,7 +22,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Filters',
+          'Filtreler',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -115,7 +115,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
   Widget filterPreviewButton({required filterColor, required String name}) {
 
     ColorFilterGenerator myFilter = ColorFilterGenerator(
-        name: "CustomFilter",
+        name: "Özel Filtre",
         filters: [
           filterColor.opacity(widget.controller.filterOpacity).matrix,
         ]

@@ -142,7 +142,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       const Text(
-                        'Cancel?',
+                        'İptal Et?',
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.w600,
@@ -153,7 +153,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
                         height: 20,
                       ),
                       const Text(
-                        "If you go back now, you'll lose all the edits you've made.",
+                        "Şimdi geri dönerseniz, yaptığınız tüm düzenlemeleri kaybedeceksiniz.",
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w400,
@@ -172,7 +172,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
                           }
                         },
                         child: Text(
-                          'Yes',
+                          'Evet',
                           style: TextStyle(
                               fontSize: 16,
                               color: Colors.redAccent.shade200,
@@ -192,7 +192,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
                           Navigator.pop(c, true);
                         },
                         child: const Text(
-                          'No',
+                          'Hayır',
                           style: TextStyle(
                               fontSize: 16,
                               color: Colors.white,
@@ -239,7 +239,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
               systemNavigationBarIconBrightness: Brightness.light,
             ),
             title: GradientText(
-              'New Reels',
+              'Yeni Reels',
               style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w300,
@@ -394,7 +394,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
                                 if (video.path.isNotEmpty) {
                                   if (start > 180 || start < 15) {
                                     showSnackBar(
-                                        msg: "Video should be between 15 seconds to 3 minutes.");
+                                        msg: "Video 15 Saniye İle 3 Dakika Arasında Olmalıdır.");
                                     File(video.path).delete();
                                   } else {
                                     if (controller!.value.isInitialized) {
@@ -675,7 +675,7 @@ class _NewReelsScreenState extends State<NewReelsScreen> with
           (Timer timer) => setState(() {
           if (start > 300) {
             showSnackBar(
-                msg: "Video should be between 15 seconds to 3 minutes.");
+                msg: "Video 15 Saniye İle 3 Dakika Arasında Olmalıdır.");
             stopVideoRecording().then((XFile? video) {
               if (mounted) {
                 setState(() {

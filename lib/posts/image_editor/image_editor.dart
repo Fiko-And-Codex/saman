@@ -434,7 +434,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                         height: 20,
                       ),
                       const Text(
-                        "If you go back now, you'll lose all the edits you've made.",
+                        "Eğer şimdi geri dönerseniz, yaptığınız tüm düzenlemeleri kaybedeceksiniz.",
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w400,
@@ -632,7 +632,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                     quality: 75,
                   );
                   final tempDir = await getTemporaryDirectory();
-                  File media = await File('${tempDir.path}/saman${DateTime.timestamp()}image.png').create();
+                  File media = await File('${tempDir.path}/sinoord${DateTime.timestamp()}image.png').create();
                   media.writeAsBytesSync(convertedImage);
                   Navigator.pushReplacement(
                       context,
@@ -872,7 +872,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                                           child: Align(
                                             alignment: Alignment.centerLeft,
                                             child: Text(
-                                              i18n('Blur Color'),
+                                              i18n('Bulanıklık Rengi'),
                                               style: const TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 18,
@@ -926,7 +926,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                                           child: Align(
                                             alignment: Alignment.centerLeft,
                                             child: Text(
-                                              i18n('Blur Radius'),
+                                              i18n('Bulanık Yarıçapı'),
                                               style: const TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 18,
@@ -953,7 +953,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                                           ),
                                           TextButton(
                                             child: Text(
-                                              i18n('Reset'),
+                                              i18n('Sıfırla'),
                                               style: const TextStyle(
                                                 color: Colors.blue,
                                                 fontSize: 15,
@@ -977,7 +977,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                                           child: Align(
                                             alignment: Alignment.centerLeft,
                                             child: Text(
-                                              i18n('Blur Opacity'),
+                                              i18n('Bulanık Opaklık'),
                                               style: const TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 18,
@@ -1004,7 +1004,7 @@ class _SingleImageEditorState extends State<SingleImageEditor> {
                                           ),
                                           TextButton(
                                             child: Text(
-                                              i18n('Reset'),
+                                              i18n('Sıfırla'),
                                               style: const TextStyle(
                                                 color: Colors.blue,
                                                 fontSize: 15,
@@ -1192,7 +1192,7 @@ class _ImageAdjustState extends State<ImageAdjust>{
             color: Colors.white,
           ),
           title: Text(
-            i18n('Adjust'),
+            i18n('Ayarla'),
             style: const TextStyle(
               color: Colors.white,
               fontSize: 25,
@@ -1252,7 +1252,7 @@ class _ImageAdjustState extends State<ImageAdjust>{
                 children: <Widget>[
                   BottomButton(
                     icon: CupertinoIcons.brightness,
-                    text: 'Brightness',
+                    text: 'Parlaklık',
                     onTap: () async {
                       setState(() {});
                     },
@@ -1326,7 +1326,7 @@ class _ImageCropperState extends State<ImageCropper> {
             color: Colors.white,
           ),
           title: Text(
-            i18n('Crop'),
+            i18n('Kırp'),
             style: const TextStyle(
               color: Colors.white,
               fontSize: 25,
@@ -1551,7 +1551,7 @@ class _ImageFiltersState extends State<ImageFilters> {
             color: Colors.white,
           ),
           title: Text(
-            i18n('Filters'),
+            i18n('Filtreler'),
             style: const TextStyle(
               color: Colors.white,
               fontSize: 25,

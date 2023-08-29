@@ -41,7 +41,7 @@ class _PickFromGalleryScreenPostsState extends State<PickFromGalleryScreenPosts>
           systemNavigationBarIconBrightness: Brightness.light,
         ),
         title: GradientText(
-          'Select',
+          'Seçin',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w300,
@@ -73,14 +73,14 @@ class _PickFromGalleryScreenPostsState extends State<PickFromGalleryScreenPosts>
           double sizeInMb = sizeInBytes / (1024 * 1024);
           if (sizeInMb > 4){
             ScaffoldMessenger.of(context).removeCurrentSnackBar();
-            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('File size is too large ( > 2 MB)', textAlign: TextAlign.center, style: TextStyle(fontSize: 15),), backgroundColor: Colors.blue,
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Dosya Boyutu Çok Büyük ( > 2 MB)', textAlign: TextAlign.center, style: TextStyle(fontSize: 15),), backgroundColor: Colors.blue,
                 behavior: SnackBarBehavior.floating, duration: Duration(seconds: 2), padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(30)),
                 )
             ));
           } else{
-            // TODO: Implement multi image upload
+            
             XFile file = XFile(path.first.path.toString());
             viewModel.uploadPostSingleImage(image: file, context: context);
           }

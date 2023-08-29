@@ -115,7 +115,7 @@ class BottomTools extends StatelessWidget {
                             ],
                           ),
                           const Text(
-                            'Stories Creator',
+                            'Hikaye Oluştur',
                             style: TextStyle(
                                 color: Colors.white38,
                                 letterSpacing: 1.5,

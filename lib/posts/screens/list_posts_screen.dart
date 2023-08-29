@@ -36,7 +36,7 @@ class _ListPostsState extends State<ListPosts> {
               ),
             ),
             const Text(
-              'Posts',
+              'Gönderiler',
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
@@ -77,7 +77,7 @@ class _ListPostsState extends State<ListPosts> {
 
               return const Center(
                 child: Text(
-                  'No Feed to show',
+                  'Gösterilecek İçerik Yok',
                   style: TextStyle(
                     fontSize: 26.0,
                     fontWeight: FontWeight.bold,

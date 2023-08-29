@@ -37,7 +37,7 @@ class _PickFromGalleryScreenReelsState extends State<PickFromGalleryScreenReels>
           systemNavigationBarIconBrightness: Brightness.light,
         ),
         title: GradientText(
-          'Select',
+          'Seç',
           style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w300,

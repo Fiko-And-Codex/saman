@@ -37,7 +37,7 @@ class GiphyContext extends InheritedWidget {
     this.onSelected,
     this.onError,
     this.showPreviewPage = true,
-    this.searchText = 'Search Giphy',
+    this.searchText = 'Gif Ara',
     this.searchDelay = const Duration(milliseconds: 500),
     required this.decorator,
     this.previewType,

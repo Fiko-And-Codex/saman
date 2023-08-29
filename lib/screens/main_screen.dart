@@ -23,12 +23,12 @@ class _MainScreenState extends State<MainScreen>{
 
   List pages = [
     {
-      'title': 'Home',
+      'title': 'Anasayfa',
       'page': const FeedsPage(),
       'index': 0,
     },
     {
-      'title': 'Search',
+      'title': 'Ara',
       'page': const SearchPage(),
       'index': 1,
     },
@@ -38,12 +38,12 @@ class _MainScreenState extends State<MainScreen>{
       'index': 2,
     },
     {
-      'title': 'Notification',
+      'title': 'Bildiri',
       'page': const ActivityPage(),
       'index': 3,
     },
     {
-      'title': 'Profile',
+      'title': 'Profil',
       'page': ProfilePage(profileId: auth.currentUser!.uid),
       'index': 4,
     },

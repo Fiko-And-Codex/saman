@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Constants {
-  static const String appName = 'saman';
+  static const String appName = 'Sinoord';
 
   static const Color lightPrimary = Color.fromARGB(255, 255, 255, 255);
   static const Color darkPrimary = Color.fromARGB(255, 0, 0, 0);

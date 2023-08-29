@@ -50,7 +50,7 @@ class CropScreen extends StatelessWidget {
                   onPressed: () => Navigator.pop(context),
                   icon: const Center(
                     child: Text(
-                      "Cancel",
+                      "İptal Et",
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
                   ),
@@ -115,7 +115,7 @@ class CropScreen extends StatelessWidget {
                   },
                   icon: Center(
                     child: Text(
-                      "Done",
+                      "Tamam",
                       style: TextStyle(
                         color: const CropGridStyle().selectedBoundariesColor,
                         fontWeight: FontWeight.bold,
@@ -148,7 +148,7 @@ class CropScreen extends StatelessWidget {
           textStyle: Theme.of(context).textTheme.bodySmall,
         ),
         onPressed: () => controller.preferredCropAspectRatio = f?.toDouble(),
-        child: Text(f == null ? 'Free' : '${f.numerator}:${f.denominator}'),
+        child: Text(f == null ? 'Ücretsiz' : '${f.numerator}:${f.denominator}'),
       ),
     );
   }

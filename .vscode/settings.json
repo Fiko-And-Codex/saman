@@ -1,4 +1,5 @@
 {
     "cmake.configureOnOpen": true,
-    "cmake.sourceDirectory": "D:/saman/saman/linux"
+    "cmake.sourceDirectory": "D:/saman/saman/linux",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

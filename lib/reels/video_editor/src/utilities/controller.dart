@@ -18,7 +18,7 @@ class VideoMinDurationError extends Error {
 
   @override
   String toString() =>
-      "Invalid argument (minDuration): The minimum duration ($minDuration) cannot be bigger than the duration of the video file ($videoDuration)";
+      "Geçersiz bağımsız değişken (minSüre): Asgari süre ($minDuration) video dosyasının süresinden daha büyük olamaz ($videoDuration)";
 }
 
 enum RotateDirection { left, right }
@@ -49,7 +49,7 @@ class VideoEditorController extends ChangeNotifier {
         )),
         trimStyle = trimStyle ?? TrimSliderStyle(),
         assert(maxDuration > minDuration,
-            'The maximum duration must be bigger than the minimum duration.');
+            'Maksimum süre minimum süreden büyük olmalıdır.');
 
   int _rotation = 0;
 
@@ -263,7 +263,7 @@ class VideoEditorController extends ChangeNotifier {
   void applyCacheCrop() => updateCrop(cacheMinCrop, cacheMaxCrop);
   void updateCrop(Offset min, Offset max) {
     assert(min < max,
-        'Minimum crop value ($min) cannot be bigger and maximum crop value ($max)');
+        'Minimum mahsul değeri ($min) daha büyük ve maksimum mahsul değeri olamaz ($max)');
 
     _minCrop = min;
     _maxCrop = max;
@@ -272,7 +272,7 @@ class VideoEditorController extends ChangeNotifier {
 
   void updateTrim(double min, double max) {
     assert(min < max,
-        'Minimum trim value ($min) cannot be bigger and maximum trim value ($max)');
+        'Minimum trim değeri ($min) daha büyük olamaz ve maksimum trim değeri ($max)');
 
     final double newDuration = videoDuration.inMicroseconds * (max - min);
 

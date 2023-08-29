@@ -51,7 +51,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
                 enabled: !viewModel.loading,
                 initialValue: widget.user!.username,
                 prefix: CupertinoIcons.person_solid,
-                hintText: "Username",
+                hintText: "Kullanıcı Adı",
                 textInputAction: TextInputAction.next,
                 validateFunction: Regex.validateUsername,
                 onSaved: (String val) {
@@ -65,7 +65,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
                 enabled: !viewModel.loading,
                 initialValue: widget.user!.name,
                 prefix: CupertinoIcons.person,
-                hintText: "Name",
+                hintText: "İsim",
                 textInputAction: TextInputAction.next,
                 validateFunction: Regex.validateName,
                 onSaved: (String val) {
@@ -79,7 +79,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
                 initialValue: widget.user!.country,
                 enabled: !viewModel.loading,
                 prefix: CupertinoIcons.globe,
-                hintText: "Country",
+                hintText: "Ülke",
                 textInputAction: TextInputAction.next,
                 validateFunction: Regex.validateCountry,
                 onSaved: (String val) {
@@ -107,7 +107,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
                   initialValue: widget.user!.profession,
                   enabled: !viewModel.loading,
                   prefix: CupertinoIcons.briefcase,
-                  hintText: "Profession",
+                  hintText: "Meslek",
                   textInputAction: TextInputAction.next,
                   validateFunction: Regex.validateProfession,
                   onSaved: (String val) {
@@ -121,7 +121,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
                   initialValue: widget.user!.gender,
                   enabled: !viewModel.loading,
                   prefix: Icons.male,
-                  hintText: "Gender",
+                  hintText: "Cinsiyet",
                   textInputAction: TextInputAction.next,
                   validateFunction: Regex.validateGender,
                   onSaved: (String val) {
@@ -161,7 +161,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
             appBar: AppBar(
               backgroundColor: Theme.of(context).colorScheme.background,
               title: GradientText(
-                'Edit Profile',
+                'Profili Düzenle',
                 style: const TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.w300,
@@ -207,7 +207,7 @@ class _EditProfileScreenState extends State<EditProfileScreen>{
                         .then((value) => setState(() {
                       viewModel.imgLink = value;
                       if(viewModel.imgLink != null) {
-                        viewModel.showSnackBar('Profile picture uploaded successfully.', context);
+                        viewModel.showSnackBar('Profil Resmi Başarıyla Yüklendi.', context);
                       }
                     })),
                     child: Padding(

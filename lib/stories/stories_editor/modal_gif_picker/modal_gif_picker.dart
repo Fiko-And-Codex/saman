@@ -193,7 +193,7 @@ class ModalGifPicker {
                     child: ElevatedButton(
                       onPressed: () => Navigator.pop(context),
                       child: const Text(
-                        'Close',
+                        'İptal',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,

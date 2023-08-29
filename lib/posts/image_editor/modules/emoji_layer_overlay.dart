@@ -47,7 +47,7 @@ class _EmojiLayerOverlayState extends State<EmojiLayerOverlay> {
           const SizedBox(height: 20),
           Center(
             child: Text(
-              i18n('Size Adjust'),
+              i18n('Boyut Ayarı'),
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18,
@@ -86,7 +86,7 @@ class _EmojiLayerOverlayState extends State<EmojiLayerOverlay> {
                   // setState(() {});
                 },
                 child: Text(
-                  i18n('Remove'),
+                  i18n('Kaldır'),
                   style: const TextStyle(color: Colors.red, fontSize: 20),
                 ),
               ),

@@ -19,7 +19,7 @@ class ImageUtils {
         bool preserveExif = true,
       }) async {
     if (!_formatMap.containsKey(format)) {
-      throw Exception('Output format not supported by library.');
+      throw Exception('Çıkış formatı kütüphane tarafından desteklenmiyor.');
     }
 
     if (image is Uint8List) {
@@ -44,12 +44,12 @@ class ImageUtils {
       );
 
       if (output == null) {
-        throw Exception('Unable to compress image file');
+        throw Exception('Resim Dosyası Sıkıştırılamıyor');
       }
 
       return output;
     } else {
-      throw Exception('Image must be a Uint8List or path.');
+      throw Exception('Resşm Bir Uint8List Veya Dosya Yolu Olmalıdır.');
     }
   }
 
